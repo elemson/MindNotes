@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91146aa1-20ba-4dbe-a4ce-b5543532bfe9" name="Default Changelist" comment="" />
+    <list default="true" id="91146aa1-20ba-4dbe-a4ce-b5543532bfe9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contexts/NoteProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/contexts/NoteProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/firebase/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/firebase/firebaseConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/firebase/services/NoteService.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/firebase/services/NoteService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/firebase/services/UserService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/NoteScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/NoteScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qV4TNkaYnyL0Oa8atZeANOysNr" />
   <component name="ProjectViewState">
@@ -33,17 +47,19 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="93" width="1095" height="504" key="AVDManager" timestamp="1617151783422">
+    <state x="93" y="93" width="1095" height="504" key="AVDManager" timestamp="1617214971331">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="93" y="93" width="1095" height="504" key="AVDManager/0.0.1280.689@0.0.1280.689" timestamp="1617151783422" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1617152887588">
+    <state x="93" y="93" width="1095" height="504" key="AVDManager/0.0.1280.689/3840.0.1920.1050/1920.0.1920.1050@0.0.1280.689" timestamp="1617214971331" />
+    <state x="93" y="93" width="1095" height="504" key="AVDManager/0.0.1280.689@0.0.1280.689" timestamp="1617180652527" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1617207718277">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1280.689/3840.0.1920.1050/1920.0.1920.1050@0.0.1280.689" timestamp="1617207718277" />
     <state x="0" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1617152887588" />
-    <state x="-22" y="155" key="run.anything.popup" timestamp="1617152892438">
+    <state x="298" y="153" key="run.anything.popup" timestamp="1617180197759">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="-22" y="155" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1617152892438" />
+    <state x="298" y="153" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1617180197759" />
   </component>
 </project>

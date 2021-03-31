@@ -9,7 +9,7 @@ const NoteProvider = ({ children }) => {
 
   const findNotes = async () => {
 //    const result = await AsyncStorage.getItem('notes');
-    const result = await NoteService.getAll().on("value", onDataChange);
+    const result = await NoteService.getAll()
     if (result !== null) setNotes(JSON.parse(result));
   };
 

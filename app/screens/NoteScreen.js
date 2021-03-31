@@ -53,11 +53,12 @@ const NoteScreen = ({ user, navigation }) => {
     const note = { id: Date.now(), title, desc, time: Date.now() };
     const updatedNotes = [...notes, note];
     setNotes(updatedNotes);
-		await NoteService.create(updatedNotes).then(() => {
-     AsyncStorage.setItem('notes', JSON.stringify(updatedNotes));
+    // AsyncStorage.setItem('notes', JSON.stringify(updatedNotes));
+	await NoteService.create(note).then(() => {
+		console.log(note)
+
 	}).catch(e => {
-		console.log(e)
-	})
+		console.log(e)})
 
   };
 
