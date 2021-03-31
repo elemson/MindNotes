@@ -1,10 +1,10 @@
-import firebase from "./UserService";
-import firebaseConfig from '../firebaseConfig'
+import * as firebase from "firebase";
+import {db, firebaseConfig} from '../firebaseConfig'
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig)
+db.initializeApp(firebaseConfig)
 
-const db = firebase.ref("/note");
+const dbf = db.ref("/note");
 
 const getAll = () => {
   return db;

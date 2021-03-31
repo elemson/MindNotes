@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NoteService from "../firebase/services/NoteService"
 import { ScrollView, StyleSheet, Text, View, Alert } from 'react-native';
 import { useHeaderHeight } from '@react-navigation/stack';
 import colors from '../misc/colors';
@@ -6,7 +7,7 @@ import RoundIconBtn from './RoundIconBtn';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNotes } from '../contexts/NoteProvider';
 import NoteInputModal from './NoteInputModal';
-import NoteService from "../services/NoteService"
+
 
 const formatDate = ms => {
   const date = new Date(ms);
@@ -35,8 +36,8 @@ const NoteDetail = props => {
     const newNotes = notes.filter(n => n.id !== note.id);
     setNotes(newNotes);
 
-	NoteService.remove(newNotes).then(() => {
-		 await AsyncStorage.setItem('notes', JSON.stringify(newNotes));
+	await NoteService.remove(newNotes).then(() => {
+		 AsyncStorage.setItem('notes', JSON.stringify(newNotes));
     	 props.navigation.goBack();
 	})
 
@@ -79,8 +80,8 @@ const NoteDetail = props => {
       return n;
     });
 	setNotes(newNotes);
-    NoteService.update(notes.title).then(() => {
-    	await AsyncStorage.setItem('notes', JSON.stringify(newNotes));
+   await NoteService.update(notes.title).then(() => {
+    	 AsyncStorage.setItem('notes', JSON.stringify(newNotes));
 	})
 
   };

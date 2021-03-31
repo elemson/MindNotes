@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import NoteService from "..firebase/services/NoteService"
+import NoteService from "../firebase/services/NoteService"
 import React, { useEffect, useState } from 'react';
 import {
   View,
@@ -53,8 +53,8 @@ const NoteScreen = ({ user, navigation }) => {
     const note = { id: Date.now(), title, desc, time: Date.now() };
     const updatedNotes = [...notes, note];
     setNotes(updatedNotes);
-	NoteService.create(updatedNotes).then(() => {
-    	await AsyncStorage.setItem('notes', JSON.stringify(updatedNotes));
+		await NoteService.create(updatedNotes).then(() => {
+     AsyncStorage.setItem('notes', JSON.stringify(updatedNotes));
 	}).catch(e => {
 		console.log(e)
 	})

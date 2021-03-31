@@ -1,4 +1,4 @@
-import NoteService from "../firebase/services/NoteService"
+import NoteService from "./app/firebase/services/NoteService"
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
